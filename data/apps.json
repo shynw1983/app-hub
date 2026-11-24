@@ -1,0 +1,46 @@
+{
+  "hub": {
+    "title": "App Labs",
+    "subtitle": "个人兴趣软件发布中心 · GitHub Releases 直链，手机浏览器一键安装",
+    "footerNote": "由 GitHub Releases 自动同步最新版本 · 所有安装包均为自研构建"
+  },
+  "apps": [
+    {
+      "id": "vidow",
+      "name": "Vidow",
+      "githubRepo": "shynw1983/vidow",
+      "assetMatcher": ".apk",
+      "tagline": "网络视频下载 · 全平台兼容转换 · 上传精准压大小",
+      "description": "集 yt-dlp + FFmpeg + Media3 硬件加速于一体的安卓视频工具。支持 YouTube / X / B站 / 小红书 / 抖音等链接直下、App 内热更新核心、站点 Cookie 登录、HDR 转 SDR 防发灰及按目标 MB 智能压缩。",
+      "category": "视频工具",
+      "platforms": ["Android"],
+      "arch": "arm64-v8a",
+      "minOs": "Android 8.0+",
+      "latestVersion": "1.4.4",
+      "updatedAt": "2026-11-25",
+      "fileSize": "72 MB",
+      "fileName": "Vidow-v1.4.4-debug.apk",
+      "downloadUrl": "https://github.com/shynw1983/vidow/releases/latest/download/Vidow-v1.4.4-debug.apk",
+      "sha256": "afdc17991d47a49c7e0ed1e64872265908c85a58639da0423c790c2a275b0a9b",
+      "iconType": "vidow",
+      "highlights": [
+        "yt-dlp + FFmpeg 内核，支持 Stable / Nightly 在线热更新",
+        "内置网页站点登录（B站 / 小红书 / 抖音 / 微博 Cookie 增强）",
+        "H.264 + AAC 优先直下，支持 HDR → SDR 与指定 MB 防糊压缩",
+        "Bento 高对比明暗界面，下载/转换记录与缩略图本地永久保存"
+      ],
+      "releases": [
+        {
+          "version": "1.4.4",
+          "date": "2026-11-25",
+          "notes": [
+            "换上全新「V·W 折叠波翼」电光蓝青自适应矢量图标",
+            "正式定名 Vidow，输出目录统一为 Movies/Vidow 与 Music/Vidow",
+            "解析链接后实时展示格式、视频/音频编码、帧率与预估体积",
+            "本地永久保存下载/转换历史与缩略图磁盘缓存"
+          ]
+        }
+      ]
+    }
+  ]
+}

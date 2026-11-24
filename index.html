@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App Labs · 个人软件发布下载中心</title>
+  <meta name="description" content="个人兴趣软件与工具发布下载页，自动同步 GitHub Releases，支持手机浏览器一键直装。" />
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card: #162032;
+      --subtle: #1e293b;
+      --border: #293548;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --secondary: #cbd5e1;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --accent: #38bdf8;
+      --success-bg: #0e2f1d;
+      --success-text: #86efac;
+      --shadow: 0 18px 42px rgba(0, 0, 0, 0.36);
+    }
+    [data-theme="light"] {
+      --bg: #f3f5f9;
+      --card: #ffffff;
+      --subtle: #eff3f8;
+      --border: #e2e8f0;
+      --text: #0f172a;
+      --muted: #64748b;
+      --secondary: #475569;
+      --primary: #1d4ed8;
+      --primary-hover: #1e40af;
+      --accent: #0284c7;
+      --success-bg: #dcfce7;
+      --success-text: #15803d;
+      --shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      transition: background 0.2s, color 0.2s;
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .brand p {
+      margin: 6px 0 0;
+      font-size: 14px;
+      color: var(--secondary);
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .pill-btn {
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .pill-btn:hover { border-color: var(--accent); }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 22px;
+    }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .chip {
+      background: var(--card);
+      color: var(--secondary);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 7px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .chip.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    .search-input {
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 9px 14px;
+      font-size: 14px;
+      width: 240px;
+      max-width: 100%;
+      outline: none;
+    }
+    .search-input:focus { border-color: var(--accent); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 18px;
+    }
+    .app-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .app-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .app-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+    }
+    .app-title-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .app-title {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .ver-badge {
+      background: var(--success-bg);
+      color: var(--success-text);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 999px;
+    }
+    .sync-tag {
+      font-size: 11px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .app-tagline {
+      margin: 4px 0 0;
+      font-size: 13px;
+      color: var(--secondary);
+      line-height: 1.45;
+    }
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .meta-pill {
+      background: var(--subtle);
+      border: 1px solid var(--border);
+      color: var(--secondary);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 9px;
+      border-radius: 8px;
+    }
+    .highlights {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 13px;
+      color: var(--secondary);
+      line-height: 1.5;
+    }
+    .highlights li::before {
+      content: "✦ ";
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .actions {
+      display: flex;
+      gap: 8px;
+      margin-top: auto;
+    }
+    .btn-primary {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 14px;
+      padding: 13px 14px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .btn-primary:hover { background: var(--primary-hover); }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--subtle);
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 13px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-secondary:hover { border-color: var(--accent); }
+    .install-tip {
+      margin-top: 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 18px 20px;
+      font-size: 13px;
+      color: var(--secondary);
+      line-height: 1.7;
+    }
+    .install-tip b { color: var(--text); }
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 6, 23, 0.72);
+      backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      z-index: 50;
+    }
+    .modal-backdrop.open { display: flex; }
+    .modal {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      max-width: 460px;
+      width: 100%;
+      padding: 22px;
+      max-height: 85vh;
+      overflow-y: auto;
+      box-shadow: var(--shadow);
+    }
+    .modal-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    .modal-head h3 { margin: 0; font-size: 18px; }
+    .close-btn {
+      background: var(--subtle);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .release-item {
+      border-top: 1px solid var(--border);
+      padding: 12px 0;
+    }
+    .release-item:first-of-type { border-top: none; padding-top: 0; }
+    .release-ver {
+      font-weight: 700;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    .release-ver a { color: var(--accent); text-decoration: none; font-size: 12px; }
+    .release-ver span { color: var(--muted); font-weight: 500; font-size: 12px; }
+    .release-notes {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 13px;
+      color: var(--secondary);
+      line-height: 1.65;
+      white-space: pre-line;
+    }
+    .sha-box {
+      margin-top: 14px;
+      padding: 10px 12px;
+      background: var(--subtle);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 11px;
+      word-break: break-all;
+      color: var(--secondary);
+    }
+    .empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+    }
+    @media (max-width: 520px) {
+      .search-input { width: 100%; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1 id="hubTitle">App Labs</h1>
+        <p id="hubSubtitle">个人兴趣软件发布中心 · GitHub Releases 直链，手机浏览器一键安装</p>
+      </div>
+      <div class="header-actions">
+        <button class="pill-btn" id="themeBtn" onclick="toggleTheme()">☀ 浅色</button>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <div class="filters" id="filterBar"></div>
+      <input class="search-input" id="searchInput" type="search" placeholder="搜索应用或功能..." oninput="renderApps()" />
+    </div>
+
+    <main class="grid" id="appsGrid"></main>
+
+    <section class="install-tip">
+      <b>Android 安装说明：</b><br />
+      1. 建议用系统浏览器或 Chrome 打开本页，点击 <b>「立即下载」</b> 获取 <code>.apk</code> 安装包（微信内置浏览器可能会拦截下载，请点右上角「在浏览器中打开」）。<br />
+      2. 下载完成后点击安装；若系统提示“允许来自此来源的应用”，开启一次即可，后续同款 App 发新版支持<b>直接覆盖升级</b>，不丢失本地记录与设置。
+    </section>
+
+    <footer id="hubFooter"></footer>
+  </div>
+
+  <div class="modal-backdrop" id="detailModal" onclick="if(event.target===this) closeModal()">
+    <div class="modal">
+      <div class="modal-head">
+        <h3 id="modalTitle">更新日志</h3>
+        <button class="close-btn" onclick="closeModal()">✕</button>
+      </div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script>
+    let allApps = [];
+    let activePlatform = '全部';
+    const GH_CACHE_TTL_MS = 5 * 60 * 1000;
+
+    function initTheme() {
+      const saved = localStorage.getItem('labs_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', saved);
+      document.getElementById('themeBtn').textContent = saved === 'dark' ? '☀ 浅色' : '🌙 深色';
+    }
+
+    function toggleTheme() {
+      const cur = document.documentElement.getAttribute('data-theme') || 'dark';
+      const next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('labs_theme', next);
+      document.getElementById('themeBtn').textContent = next === 'dark' ? '☀ 浅色' : '🌙 深色';
+    }
+
+    function formatBytes(bytes) {
+      if (!bytes || bytes <= 0) return '';
+      const mb = bytes / (1024 * 1024);
+      return mb >= 1 ? `${mb.toFixed(1)} MB` : `${Math.round(bytes / 1024)} KB`;
+    }
+
+    function renderIconSvg(app) {
+      if (app.iconType === 'vidow') {
+        return `
+          <svg viewBox="0 0 108 108" width="64" height="64">
+            <defs>
+              <linearGradient id="bgC_${app.id}" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#1D4ED8"/>
+                <stop offset="55%" stop-color="#0284C7"/>
+                <stop offset="100%" stop-color="#06B6D4"/>
+              </linearGradient>
+              <linearGradient id="wave_${app.id}" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#BAE6FD"/>
+                <stop offset="100%" stop-color="#FFFFFF"/>
+              </linearGradient>
+            </defs>
+            <rect width="108" height="108" fill="url(#bgC_${app.id})"/>
+            <circle cx="24" cy="20" r="34" fill="#FFFFFF" opacity="0.14"/>
+            <g transform="translate(54,54) scale(0.86) translate(-54,-54)">
+              <path d="M51,64 L64.5,39 C66.2,35.8 70.8,35.8 72.5,39 L84,61 C85.8,64.5 83.2,68.8 79.2,68.8 L71,68.8 L63,53.5 L54,70 Z" fill="url(#wave_${app.id})" opacity="0.74"/>
+              <path d="M23,36 C23,32.5 27.1,30.8 29.5,33.4 L48.5,67.5 C50.5,71.1 55.7,71.1 57.7,67.5 L75.2,35.8 C77.1,32.3 82.2,33.7 82.2,37.6 L82.2,44.5 C82.2,46.8 81.6,49.0 80.5,51.0 L62.5,78.2 C58.2,84.6 48.8,84.6 44.5,78.2 L24.6,43.2 C23.5,41.2 23,38.6 23,36 Z" fill="#FFFFFF"/>
+            </g>
+          </svg>`;
+      }
+      const letter = (app.name || 'A')[0].toUpperCase();
+      return `
+        <svg viewBox="0 0 108 108" width="64" height="64">
+          <defs>
+            <linearGradient id="gen_${app.id}" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#2563EB"/>
+              <stop offset="100%" stop-color="#7C3AED"/>
+            </linearGradient>
+          </defs>
+          <rect width="108" height="108" fill="url(#gen_${app.id})"/>
+          <text x="54" y="68" text-anchor="middle" fill="#FFFFFF" font-size="48" font-weight="800" font-family="system-ui, sans-serif">${letter}</text>
+        </svg>`;
+    }
+
+    async function syncFromGitHubReleases(app) {
+      if (!app.githubRepo) return app;
+      const cacheKey = `gh_rel_${app.githubRepo}`;
+      try {
+        let releases = null;
+        const cachedRaw = localStorage.getItem(cacheKey);
+        if (cachedRaw) {
+          const cached = JSON.parse(cachedRaw);
+          if (Date.now() - cached.ts < GH_CACHE_TTL_MS && Array.isArray(cached.data)) {
+            releases = cached.data;
+          }
+        }
+        if (!releases) {
+          const res = await fetch(`https://api.github.com/repos/${app.githubRepo}/releases?per_page=6`, {
+            headers: { Accept: 'application/vnd.github+json' }
+          });
+          if (!res.ok) return app;
+          releases = await res.json();
+          localStorage.setItem(cacheKey, JSON.stringify({ ts: Date.now(), data: releases }));
+        }
+        if (!Array.isArray(releases) || releases.length === 0) return app;
+
+        const latest = releases.find(r => !r.draft) || releases[0];
+        const matcher = (app.assetMatcher || '.apk').toLowerCase();
+        const asset = (latest.assets || []).find(a => (a.name || '').toLowerCase().includes(matcher))
+          || (latest.assets || [])[0];
+
+        const ver = (latest.tag_name || '').replace(/^v/i, '') || app.latestVersion;
+        const pubDate = (latest.published_at || '').slice(0, 10) || app.updatedAt;
+
+        const mappedReleases = releases.filter(r => !r.draft).map(r => {
+          const relAsset = (r.assets || []).find(a => (a.name || '').toLowerCase().includes(matcher))
+            || (r.assets || [])[0];
+          const bodyLines = (r.body || '')
+            .split('\n')
+            .map(l => l.replace(/^[\s\-*•]+/, '').trim())
+            .filter(Boolean);
+          return {
+            version: (r.tag_name || '').replace(/^v/i, ''),
+            date: (r.published_at || '').slice(0, 10),
+            downloadUrl: relAsset ? relAsset.browser_download_url : r.html_url,
+            notes: bodyLines.length ? bodyLines : ['常规更新与优化']
+          };
+        });
+
+        return {
+          ...app,
+          latestVersion: ver,
+          updatedAt: pubDate,
+          fileSize: asset ? formatBytes(asset.size) : app.fileSize,
+          fileName: asset ? asset.name : app.fileName,
+          downloadUrl: asset ? asset.browser_download_url : app.downloadUrl,
+          releases: mappedReleases.length ? mappedReleases : app.releases,
+          syncedLive: true
+        };
+      } catch {
+        return app;
+      }
+    }
+
+    function renderFilters() {
+      const platforms = ['全部', ...new Set(allApps.flatMap(a => a.platforms || []))];
+      const bar = document.getElementById('filterBar');
+      bar.innerHTML = platforms.map(p => `
+        <button class="chip ${p === activePlatform ? 'active' : ''}" onclick="setPlatform('${p}')">${p}</button>
+      `).join('');
+    }
+
+    function setPlatform(p) {
+      activePlatform = p;
+      renderFilters();
+      renderApps();
+    }
+
+    function renderApps() {
+      const q = (document.getElementById('searchInput').value || '').trim().toLowerCase();
+      const filtered = allApps.filter(app => {
+        const matchPlatform = activePlatform === '全部' || (app.platforms || []).includes(activePlatform);
+        const hay = `${app.name} ${app.tagline} ${app.description} ${app.category}`.toLowerCase();
+        return matchPlatform && (!q || hay.includes(q));
+      });
+
+      const grid = document.getElementById('appsGrid');
+      if (!filtered.length) {
+        grid.innerHTML = `<div class="empty">没有找到匹配的应用</div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(app => `
+        <article class="app-card">
+          <div class="app-head">
+            <div class="app-icon">${renderIconSvg(app)}</div>
+            <div>
+              <div class="app-title-row">
+                <h2 class="app-title">${app.name}</h2>
+                <span class="ver-badge">v${app.latestVersion}</span>
+                ${app.syncedLive ? '<span class="sync-tag">● Live</span>' : ''}
+              </div>
+              <p class="app-tagline">${app.tagline}</p>
+            </div>
+          </div>
+
+          <div class="meta-row">
+            ${(app.platforms || []).map(p => `<span class="meta-pill">${p}</span>`).join('')}
+            ${app.arch ? `<span class="meta-pill">${app.arch}</span>` : ''}
+            ${app.fileSize ? `<span class="meta-pill">${app.fileSize}</span>` : ''}
+            ${app.minOs ? `<span class="meta-pill">${app.minOs}</span>` : ''}
+            ${app.updatedAt ? `<span class="meta-pill">更新于 ${app.updatedAt}</span>` : ''}
+          </div>
+
+          <ul class="highlights">
+            ${(app.highlights || []).map(h => `<li>${h}</li>`).join('')}
+          </ul>
+
+          <div class="actions">
+            <a class="btn-primary" href="${app.downloadUrl}" target="_blank" rel="noopener">
+              ⬇ 立即下载 (${app.fileSize || 'APK'})
+            </a>
+            <button class="btn-secondary" onclick="openDetails('${app.id}')">历史版本</button>
+            ${app.githubRepo ? `<a class="btn-secondary" href="https://github.com/${app.githubRepo}" target="_blank" rel="noopener">GitHub</a>` : ''}
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function openDetails(id) {
+      const app = allApps.find(a => a.id === id);
+      if (!app) return;
+      document.getElementById('modalTitle').textContent = `${app.name} · 版本与日志`;
+      const releasesHtml = (app.releases || []).map(r => `
+        <div class="release-item">
+          <div class="release-ver">
+            <div>v${r.version} <span>· ${r.date}</span></div>
+            ${r.downloadUrl ? `<a href="${r.downloadUrl}" target="_blank" rel="noopener">下载此版 ›</a>` : ''}
+          </div>
+          <ul class="release-notes">
+            ${(r.notes || []).map(n => `<li>${n}</li>`).join('')}
+          </ul>
+        </div>
+      `).join('');
+      const shaHtml = app.sha256
+        ? `<div class="sha-box"><b>最新版 SHA-256 校验值：</b><br/>${app.sha256}</div>`
+        : '';
+      document.getElementById('modalBody').innerHTML = releasesHtml + shaHtml;
+      document.getElementById('detailModal').classList.add('open');
+    }
+
+    function closeModal() {
+      document.getElementById('detailModal').classList.remove('open');
+    }
+
+    async function loadCatalog() {
+      initTheme();
+      try {
+        const res = await fetch('/data/apps.json', { cache: 'no-cache' });
+        const data = await res.json();
+        if (data.hub) {
+          document.getElementById('hubTitle').textContent = data.hub.title || 'App Labs';
+          document.getElementById('hubSubtitle').textContent = data.hub.subtitle || '';
+          document.getElementById('hubFooter').textContent = data.hub.footerNote || '';
+          document.title = `${data.hub.title} · 软件发布下载中心`;
+        }
+        allApps = data.apps || [];
+        renderFilters();
+        renderApps();
+
+        // Live-sync latest GitHub Releases in the background without blocking initial paint
+        const synced = await Promise.all(allApps.map(syncFromGitHubReleases));
+        allApps = synced;
+        renderApps();
+      } catch (e) {
+        document.getElementById('appsGrid').innerHTML = `<div class="empty">加载应用列表失败，请刷新重试</div>`;
+      }
+    }
+
+    loadCatalog();
+  </script>
+</body>
+</html>

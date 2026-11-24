@@ -16,20 +16,35 @@
       "platforms": ["Android"],
       "arch": "arm64-v8a",
       "minOs": "Android 8.0+",
-      "latestVersion": "1.4.5",
+      "latestVersion": "1.5.0",
       "updatedAt": "2026-11-25",
       "fileSize": "72 MB",
-      "fileName": "Vidow-v1.4.5-debug.apk",
-      "downloadUrl": "https://github.com/shynw1983/vidow/releases/latest/download/Vidow-v1.4.5-debug.apk",
-      "sha256": "c8d3cc46edd2f718244c0051d7e1d5924b8b0456009c173bb90e7a805e8bc1dc",
+      "fileName": "Vidow-v1.5.0-debug.apk",
+      "downloadUrl": "https://github.com/shynw1983/vidow/releases/latest/download/Vidow-v1.5.0-debug.apk",
+      "sha256": "47d3ff27c7cc7a11c586147445df6b5beeaf2d5634251dc842cdd257b772bd5c",
       "iconType": "vidow",
       "highlights": [
-        "yt-dlp + FFmpeg 内核，支持 Stable / Nightly 在线热更新",
-        "内置网页站点登录（B站 / 小红书 / 抖音 / 微博 Cookie 增强）",
+        "完整支持中 / 英 / 日 / 韩 4 国语言，跟随系统语言自动切换",
+        "yt-dlp + FFmpeg 内核，支持 Stable / Nightly 在线热更新与站点 Cookie 登录",
         "H.264 + AAC 优先直下，支持 HDR → SDR 与指定 MB 防糊压缩",
         "Bento 高对比明暗界面，下载/转换记录与缩略图本地永久保存"
       ],
       "releases": [
+        {
+          "version": "1.5.0",
+          "date": "2026-11-25",
+          "notes": [
+            "新增英文、简体中文、日文、韩文 4 语言完整国际化（支持 Android 系统语言自动匹配与系统单应用语言切换）",
+            "放大桌面「V·W 折叠波翼」图标前景比例（0.86 → 1.05）并放大 App 左上角 Vidow 双色胶囊徽标"
+          ]
+        },
+        {
+          "version": "1.4.5",
+          "date": "2026-11-25",
+          "notes": [
+            "App 左上角文字升级为「Vid + ow」双色圆角胶囊字标"
+          ]
+        },
         {
           "version": "1.4.4",
           "date": "2026-11-25",

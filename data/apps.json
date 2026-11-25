@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "1.3.0",
+      "latestVersion": "1.3.1",
       "updatedAt": "2026-11-26",
       "fileSize": "2.3 MB",
-      "fileName": "ZERO-v1.3.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v1.3.0-release.apk",
+      "fileName": "ZERO-v1.3.1-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v1.3.1-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v1.3.0-release.apk",
+          "fileName": "ZERO-v1.3.1-release.apk",
           "fileSize": "2.3 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v1.3.0-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v1.3.1-release.apk"
         }
       ],
-      "sha256": "212d54bfa4f558dbc5f8da1e65c3143c1883073b887431767eeeeb9d0ecbfa60",
+      "sha256": "2621df30a9eba06d11b647abd65e0049e1e627d6bc56e0fc07ff0f841564eb73",
       "iconType": "zero",
       "highlights": [
         "克制极简美学：黑曜石深色 / 冷纸白浅色 + 雾蓝 / 极简黑白 / 鼠尾草绿 / 暖陶土，完整支持日/中/韩/英 4 语言",
@@ -42,6 +42,14 @@
         "原生三端自适应：直板机单栏、折叠屏双栏、平板三栏 + 外接键盘快捷键（Ctrl+N / Ctrl+F / Esc）与 Glance 桌面小组件"
       ],
       "releases": [
+        {
+          "version": "1.3.1",
+          "date": "2026-11-26",
+          "notes": [
+            "折叠屏展开态升级为「智能动态全高双栏」：平时左全高连续滚动目录树 + 右全高任务列表（告别上下挤压与右侧空白），点开任务自动切换为全高「任务列表 | 任务详情」双栏并支持边缘滑出全高目录抽屉",
+            "修复浅色模式下系统状态栏与导航栏图标为白色看不清的问题，现随深浅色主题实时自适应"
+          ]
+        },
         {
           "version": "1.3.0",
           "date": "2026-11-26",

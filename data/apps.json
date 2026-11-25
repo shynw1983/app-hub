@@ -6,6 +6,53 @@
   },
   "apps": [
     {
+      "id": "zero",
+      "name": "ZERO",
+      "githubRepo": "shynw1983/zero",
+      "assetMatcher": ".apk",
+      "tagline": "近未来极简待办 · 无限嵌套目录 · 防误触交互 · 先做 2 分钟防拖延",
+      "description": "原生 Android（Kotlin + Jetpack Compose + Material 3 Adaptive）极简待办与专注系统，将「零阻力极速捕捉」与「强迫症级精密整理」彻底解耦。支持直板机 / 折叠屏 / 平板三端自适应、无限级目录树、0.3s 蓄力 / 30% 阻尼防误触完成、本地中文 NLP 极速输入、等宽日历、先做 2 分钟无缝续接番茄钟及两款极简深色桌面小组件。",
+      "category": "效率待办",
+      "platforms": ["Android"],
+      "arch": "Universal (arm64 / armv7)",
+      "minOs": "Android 8.0+",
+      "latestVersion": "1.0.0",
+      "updatedAt": "2026-11-25",
+      "fileSize": "2.1 MB",
+      "fileName": "ZERO-v1.0.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v1.0.0-release.apk",
+      "downloads": [
+        {
+          "platform": "Android",
+          "label": "Android (.apk)",
+          "matcher": ".apk",
+          "fileName": "ZERO-v1.0.0-release.apk",
+          "fileSize": "2.1 MB",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v1.0.0-release.apk"
+        }
+      ],
+      "sha256": "e9d9334294eff26c219dbab3aca8db2d52c6a129e87a082bb5c258ad9d10126d",
+      "iconType": "zero",
+      "highlights": [
+        "近未来极简美学：哑光黑曜石 #09090B / 冷纸白 #F7F7F9、信号橙 #FF4D00 / 电子青 #00E5FF、0.5.dp 描边与 tnum 等宽数字",
+        "防误触任务卡片：三区热区隔离、滚动锁定、0.3s 蓄力确认 / 30% 阻尼滑动完成与 3 秒底部 Undo 胶囊",
+        "本地中文 NLP 极速输入胶囊（今天/明天/周五/下午3点、/多级目录、!1-!4、#标签、语音直录与连续录入）",
+        "防拖延单任务专注（先做 2 分钟无缝续接 25 分钟番茄钟）+ 两款 Glance 深色桌面小组件 + JSON/Markdown 全量备份"
+      ],
+      "releases": [
+        {
+          "version": "1.0.0",
+          "date": "2026-11-25",
+          "notes": [
+            "首个完整版发布（仅 2.1 MB R8 精简安装包），完整支持直板机 / 折叠屏双栏 / 平板三栏自适应与外接键盘快捷键",
+            "内置无限级嵌套文件夹树、无限子任务（支持一键提升主任务）、Markdown 编辑预览与 RFC 5545 重复规则",
+            "上线月/周/日等宽日历视图、单任务专注「先做 2 分钟」+ 番茄钟，以及「今日任务」与「1x1 极速录入」两款 Glance 桌面小组件",
+            "设置页支持深浅色主题、强调色切换、防误触模式切换、震动反馈开关及本地 JSON 备份恢复 / 层级 Markdown 导出"
+          ]
+        }
+      ]
+    },
+    {
       "id": "vidow",
       "name": "Vidow",
       "githubRepo": "shynw1983/vidow",

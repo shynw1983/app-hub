@@ -376,8 +376,11 @@
 
     <section class="install-tip">
       <b>Android 安装说明：</b><br />
-      1. 建议用系统浏览器或 Chrome 打开本页，点击 <b>「立即下载」</b> 获取 <code>.apk</code> 安装包（微信内置浏览器可能会拦截下载，请点右上角「在浏览器中打开」）。<br />
-      2. 下载完成后点击安装；若系统提示“允许来自此来源的应用”，开启一次即可，后续同款 App 发新版支持<b>直接覆盖升级</b>，不丢失本地记录与设置。
+      1. 建议用系统浏览器或 Chrome 打开本页，点击 <b>「Android (.apk)」</b> 下载安装包（微信内置浏览器可能拦截，请点右上角「在浏览器中打开」）。<br />
+      2. 若提示“允许来自此来源的应用”，开启一次即可；后续发新版支持<b>直接覆盖升级</b>，不丢失本地记录与设置。<br /><br />
+      <b>macOS 安装说明（Apple Silicon M1/M2/M3/M4）：</b><br />
+      1. 点击 <b>「macOS (.dmg)」</b> 下载镜像，双击打开后将 <code>Vidow.app</code> 拖入 <code>Applications</code> 文件夹。<br />
+      2. 因采用免费本地签名，首次打开若提示“无法验证开发者”，在「系统设置 → 隐私与安全性」点一次 <b>「仍要打开」</b>（或终端执行 <code>xattr -cr /Applications/Vidow.app</code>）即可永久正常使用。
     </section>
 
     <footer id="hubFooter"></footer>
@@ -485,16 +488,33 @@
         if (!Array.isArray(releases) || releases.length === 0) return app;
 
         const latest = releases.find(r => !r.draft) || releases[0];
+        const assets = latest.assets || [];
         const matcher = (app.assetMatcher || '.apk').toLowerCase();
-        const asset = (latest.assets || []).find(a => (a.name || '').toLowerCase().includes(matcher))
-          || (latest.assets || [])[0];
+        const asset = assets.find(a => (a.name || '').toLowerCase().includes(matcher))
+          || assets[0];
+
+        const syncedDownloads = Array.isArray(app.downloads)
+          ? app.downloads.map(dl => {
+              const m = (dl.matcher || '').toLowerCase();
+              const matched = assets.find(a => (a.name || '').toLowerCase().includes(m));
+              return matched
+                ? {
+                    ...dl,
+                    fileName: matched.name,
+                    fileSize: formatBytes(matched.size),
+                    downloadUrl: matched.browser_download_url
+                  }
+                : dl;
+            })
+          : null;
 
         const ver = (latest.tag_name || '').replace(/^v/i, '') || app.latestVersion;
         const pubDate = (latest.published_at || '').slice(0, 10) || app.updatedAt;
 
         const mappedReleases = releases.filter(r => !r.draft).map(r => {
-          const relAsset = (r.assets || []).find(a => (a.name || '').toLowerCase().includes(matcher))
-            || (r.assets || [])[0];
+          const relAssets = r.assets || [];
+          const relAsset = relAssets.find(a => (a.name || '').toLowerCase().includes(matcher))
+            || relAssets[0];
           const bodyLines = (r.body || '')
             .split('\n')
             .map(l => l.replace(/^[\s\-*•]+/, '').trim())
@@ -514,6 +534,7 @@
           fileSize: asset ? formatBytes(asset.size) : app.fileSize,
           fileName: asset ? asset.name : app.fileName,
           downloadUrl: asset ? asset.browser_download_url : app.downloadUrl,
+          downloads: syncedDownloads || app.downloads,
           releases: mappedReleases.length ? mappedReleases : app.releases,
           syncedLive: true
         };
@@ -577,9 +598,16 @@
           </ul>
 
           <div class="actions">
-            <a class="btn-primary" href="${app.downloadUrl}" target="_blank" rel="noopener">
-              ⬇ 立即下载 (${app.fileSize || 'APK'})
-            </a>
+            ${Array.isArray(app.downloads) && app.downloads.length
+              ? app.downloads.map(dl => `
+                  <a class="btn-primary" href="${dl.downloadUrl}" target="_blank" rel="noopener">
+                    ⬇ ${dl.label} (${dl.fileSize || ''})
+                  </a>
+                `).join('')
+              : `<a class="btn-primary" href="${app.downloadUrl}" target="_blank" rel="noopener">
+                   ⬇ 立即下载 (${app.fileSize || 'APK'})
+                 </a>`
+            }
             <button class="btn-secondary" onclick="openDetails('${app.id}')">历史版本</button>
             ${app.githubRepo ? `<a class="btn-secondary" href="https://github.com/${app.githubRepo}" target="_blank" rel="noopener">GitHub</a>` : ''}
           </div>

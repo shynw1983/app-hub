@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.0.1",
+      "latestVersion": "2.1.0",
       "updatedAt": "2026-11-26",
       "fileSize": "2.4 MB",
-      "fileName": "ZERO-v2.0.1-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.0.1/ZERO-v2.0.1-release.apk",
+      "fileName": "ZERO-v2.1.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.1.0/ZERO-v2.1.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.0.1-release.apk",
+          "fileName": "ZERO-v2.1.0-release.apk",
           "fileSize": "2.4 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.0.1/ZERO-v2.0.1-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.1.0/ZERO-v2.1.0-release.apk"
         }
       ],
-      "sha256": "0b0374a84e57a4b52c5e643d8b739f483d2b7eab376601adc6192cf90f82eff0",
+      "sha256": "c1d09d269b2ed63757afb061b657d7d635b53aaa8401ce5a80604b74dd0a4bb0",
       "iconType": "zero",
       "highlights": [
         "打破传统清单：底部拨片一键切换「NOW 单卡执行跑道」与「VAULT 强迫症整理库」，执行零过载、整理无上限",
@@ -42,6 +42,17 @@
         "触控人体工学重构：46–54dp 舒适拇指热区、全局标签与目录大操作面板、直板/折叠屏智能动态双栏/平板三栏 + WebDAV 同步 + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.1.0",
+          "date": "2026-11-26",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.1.0/ZERO-v2.1.0-release.apk",
+          "notes": [
+            "VAULT 任务卡的左滑和右滑可分别设置为完成／恢复、删除、设为子任务或无操作。",
+            "日历视图可只读显示 Android 已同步的 Google 日程。日视图将有时间的日程排入任务时间轴，全天日程显示在顶部。",
+            "滑动设置为子任务后可搜索并选择父任务。子任务拥有完整详情，可设置截止日期、提醒、重复、优先级与标签，并按自己的日期出现在日历和日期视图中。",
+            "在任务备注的预览里可直接添加和勾选检查项。"
+          ]
+        },
         {
           "version": "2.0.1",
           "date": "2026-11-26",

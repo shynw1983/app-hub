@@ -16,30 +16,39 @@
       "platforms": ["Android"],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "1.0.0",
+      "latestVersion": "1.1.0",
       "updatedAt": "2026-11-25",
-      "fileSize": "2.1 MB",
-      "fileName": "ZERO-v1.0.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v1.0.0-release.apk",
+      "fileSize": "2.2 MB",
+      "fileName": "ZERO-v1.1.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v1.1.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v1.0.0-release.apk",
-          "fileSize": "2.1 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v1.0.0-release.apk"
+          "fileName": "ZERO-v1.1.0-release.apk",
+          "fileSize": "2.2 MB",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v1.1.0-release.apk"
         }
       ],
-      "sha256": "e9d9334294eff26c219dbab3aca8db2d52c6a129e87a082bb5c258ad9d10126d",
+      "sha256": "6f002cb57bdafe690b6ee1883dafe4fb75882ca9177ab7e0e5f3c349ee844217",
       "iconType": "zero",
       "highlights": [
+        "完整支持日 / 中 / 韩 / 英 4 国语言界面（跟随系统 + 设置页一键无重启即时切换 + Android 13+ 系统单应用语言）",
         "近未来极简美学：哑光黑曜石 #09090B / 冷纸白 #F7F7F9、信号橙 #FF4D00 / 电子青 #00E5FF、0.5.dp 描边与 tnum 等宽数字",
         "防误触任务卡片：三区热区隔离、滚动锁定、0.3s 蓄力确认 / 30% 阻尼滑动完成与 3 秒底部 Undo 胶囊",
-        "本地中文 NLP 极速输入胶囊（今天/明天/周五/下午3点、/多级目录、!1-!4、#标签、语音直录与连续录入）",
-        "防拖延单任务专注（先做 2 分钟无缝续接 25 分钟番茄钟）+ 两款 Glance 深色桌面小组件 + JSON/Markdown 全量备份"
+        "本地中/日/韩/英 NLP 极速输入胶囊 + 单任务专注（先做 2 分钟无缝续接 25m 番茄）+ Glance 深色桌面小组件 + JSON/Markdown 备份"
       ],
       "releases": [
+        {
+          "version": "1.1.0",
+          "date": "2026-11-25",
+          "notes": [
+            "新增日文、简体中文、韩文、英文 4 语言完整原生界面与设置页即时语言切换（同步支持 Android 13+ 系统单应用语言）",
+            "本地极速输入 NLP 与日期/重复规则格式化全面适配日/中/韩/英（支持 今日/明日/明後日、오늘/내일/모레 等）",
+            "新增桌面小组件多语言适配与自动化 4 语言完整性单测守卫（LocalizationCompletenessTest）"
+          ]
+        },
         {
           "version": "1.0.0",
           "date": "2026-11-25",

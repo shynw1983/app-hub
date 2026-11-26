@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.3.3",
+      "latestVersion": "2.4.0",
       "updatedAt": "2026-11-26",
       "fileSize": "2.6 MB",
-      "fileName": "ZERO-v2.3.3-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.3.3-release.apk",
+      "fileName": "ZERO-v2.4.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.4.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.3.3-release.apk",
+          "fileName": "ZERO-v2.4.0-release.apk",
           "fileSize": "2.6 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.3.3-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.4.0-release.apk"
         }
       ],
-      "sha256": "b7ce93fcca73cdae697f6fc9926b432375f11b35a326457b2c16bc4f6f481ac6",
+      "sha256": "f5bc222b0f869ff040b1ef505c1defd4bf50e2580431e3e42e55d3cc1c37c728",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,15 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.4.0",
+          "date": "2026-11-26",
+          "notes": [
+            "统一 NOW 执行页底部高亮色：极速输入胶囊（∞ 图标、边框、光标、高亮）、撤销胶囊与底部「実行 / 整理庫」切换栏在 NOW 模式下统一同步为 #FF4D00 信号橙，切回整理库自动恢复所选主题色",
+            "桌面小组件全面支持个性化配置（过滤条件 · 视图 · 主题与强调色）：点击小组件右上角配置按钮或桌面长按编辑即可实时预览并按实例保存",
+            "新增 7 种过滤范围（今日与逾期 / 收集箱 / 未来 7 天 / 高优先级 / 全部待办 / 按文件夹含子目录 / 按标签）、3 种视图布局（列表 / 紧凑 / 单卡专注）以及 6 种主题（跟随应用 / 纯黑哑光 / 浅色纸感 / 独石信号橙 / 半透深色 / 半透浅色）"
+          ]
+        },
         {
           "version": "2.3.3",
           "date": "2026-11-26",

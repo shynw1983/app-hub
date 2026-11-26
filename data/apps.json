@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.4.0",
+      "latestVersion": "2.5.0",
       "updatedAt": "2026-11-26",
       "fileSize": "2.6 MB",
-      "fileName": "ZERO-v2.4.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.4.0-release.apk",
+      "fileName": "ZERO-v2.5.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.5.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.4.0-release.apk",
+          "fileName": "ZERO-v2.5.0-release.apk",
           "fileSize": "2.6 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.4.0-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.5.0-release.apk"
         }
       ],
-      "sha256": "f5bc222b0f869ff040b1ef505c1defd4bf50e2580431e3e42e55d3cc1c37c728",
+      "sha256": "5ad7dea477487c22cd53c160a35f5de92320b4a04d7b793d7df4d1c3ec47e62b",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,15 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.5.0",
+          "date": "2026-11-26",
+          "notes": [
+            "新增多级层级标签树（例：#外出/便利店、#外出/政府机关、#客户/张三）：极速输入、任务详情或标签弹窗输入斜杠路径自动按级建树",
+            "VAULT 侧边栏升级为可展开/折叠的缩进标签树，父标签自动聚合所有子标签待办计数；长按或点「···」支持新建子标签、重命名、移动上级与安全删除子树",
+            "点击或用桌面小组件筛选父标签（如 #外出）时，自动递归聚合所有子标签任务并去重；同步完成 Room v3 无损迁移（MIGRATION_2_3）与备份兼容"
+          ]
+        },
         {
           "version": "2.4.0",
           "date": "2026-11-26",

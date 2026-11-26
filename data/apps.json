@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.3.1",
+      "latestVersion": "2.3.2",
       "updatedAt": "2026-11-26",
-      "fileSize": "2.5 MB",
-      "fileName": "ZERO-v2.3.1-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.3.1-release.apk",
+      "fileSize": "2.6 MB",
+      "fileName": "ZERO-v2.3.2-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.3.2-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.3.1-release.apk",
-          "fileSize": "2.5 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.3.1-release.apk"
+          "fileName": "ZERO-v2.3.2-release.apk",
+          "fileSize": "2.6 MB",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.3.2-release.apk"
         }
       ],
-      "sha256": "bdc015e0734618f38c06906da67ac283e94bb43b54d99d983406999bc005f9a2",
+      "sha256": "f599d6ef8e2d93d90ffab74ebeb1c420ec36d995d33e1f7244473a374f8d0bff",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,15 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.3.2",
+          "date": "2026-11-26",
+          "notes": [
+            "重塑 RUNWAY 实体跑道视觉精度：移除会与选中卡片撞框的重叠外框，改为左侧连续贯通时间轴 + 中线橙色三角形瞄准游标与右侧准星刻度，消除「実行」与时长胶囊叠字",
+            "修正「4h 限界」警戒线语义：改为独立时间轴条目，仅当累计任务耗时达到/超过 4h 上限时在对应节点画出；未超限时在队列底部显示柔和剩余余量摘要",
+            "优化未选中几何块高度对比（5m/15m/25m/1h）与展开过渡动画，并支持轻点非焦点任务平滑居中对齐"
+          ]
+        },
         {
           "version": "2.3.1",
           "date": "2026-11-26",

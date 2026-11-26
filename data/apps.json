@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.2.1",
+      "latestVersion": "2.2.2",
       "updatedAt": "2026-11-26",
       "fileSize": "2.5 MB",
-      "fileName": "ZERO-v2.2.1-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.2.1-release.apk",
+      "fileName": "ZERO-v2.2.2-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.2.2-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.2.1-release.apk",
+          "fileName": "ZERO-v2.2.2-release.apk",
           "fileSize": "2.5 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.2.1-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.2.2-release.apk"
         }
       ],
-      "sha256": "392d3ec2d6fde8fc0ea0fee1cc3d48f99f10dd455b8c956fb1ad6655b1b6d242",
+      "sha256": "1ad85bdfcefdab9c21dfb41b3fa8a8b2c09381209f9e8172741646b2012443dd",
       "iconType": "zero",
       "highlights": [
         "极致视觉反差：NOW 页进入深邃暗场聚光灯舞台（#060608 呼吸光晕 + 3D 物理任务卡堆叠），对比 VAULT 强迫症精密等宽整理库",
@@ -42,6 +42,14 @@
         "触控人体工学与防误触：44–54dp 舒适拇指热区、0.35s 蓄力渐变光环完成、直板/折叠屏双栏/平板三栏 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.2.2",
+          "date": "2026-11-26",
+          "notes": [
+            "重做 NOW 3D 叠卡物理划动交接：后卡等高显示完整预览、顶卡松手先顺滑飞出屏幕外再无闪烁切换下一张，并支持甩手速度识别与同款飞出动画",
+            "修复设置页语言切换与重启同步问题：改为同步写入偏好并立即初始化首帧语言、修正「跟随系统」重置逻辑，消除 Android 13+ 系统语言回调环"
+          ]
+        },
         {
           "version": "2.2.1",
           "date": "2026-11-26",

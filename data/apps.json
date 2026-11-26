@@ -18,30 +18,39 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.2.2",
+      "latestVersion": "2.3.0",
       "updatedAt": "2026-11-26",
       "fileSize": "2.5 MB",
-      "fileName": "ZERO-v2.2.2-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.2.2-release.apk",
+      "fileName": "ZERO-v2.3.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.3.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.2.2-release.apk",
+          "fileName": "ZERO-v2.3.0-release.apk",
           "fileSize": "2.5 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.2.2-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.3.0-release.apk"
         }
       ],
-      "sha256": "1ad85bdfcefdab9c21dfb41b3fa8a8b2c09381209f9e8172741646b2012443dd",
+      "sha256": "13cfa1bc41b219d2300462df51f254120fd29a0f8b0a645f05afe3a887005ff6",
       "iconType": "zero",
       "highlights": [
-        "极致视觉反差：NOW 页进入深邃暗场聚光灯舞台（#060608 呼吸光晕 + 3D 物理任务卡堆叠），对比 VAULT 强迫症精密等宽整理库",
+        "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
         "全新动态主题桌面图标：45° 宽体几何「ZERO」与平切完成度进度环「O」，跟随设置中的雾蓝/黑白/鼠尾草/暖陶土自动同步切换",
-        "专治 ADHD 选择瘫痪与拖延启动：机械 3 拍「盲抽换卡」、卡片微动作「第一步破冰」及卡内原位心流计时变形",
-        "触控人体工学与防误触：44–54dp 舒适拇指热区、0.35s 蓄力渐变光环完成、直板/折叠屏双栏/平板三栏 + WebDAV + 日中韩英 4 语言"
+        "专治 ADHD 选择瘫痪与拖延启动：长按起步 2 分钟倒计时、卡片微动作「第一步破冰」及卡内/轨道原位心流计时",
+        "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.3.0",
+          "date": "2026-11-26",
+          "notes": [
+            "首页执行页重塑为可扩展「执行主题引擎（Execution Theme Engine）」：共用 ExecuteViewModel / ExecuteUiState，支持右上角主题选择器带色块预览与 Crossfade 无损切换",
+            "新增主题一 MONOLITH（独石留白）：#09090B 纯黑全手势场，大号标题 + #FF4D00 呼吸光晕随任务轻/中/重缩放，长按中央直接进入 2 分钟等宽倒计时、左右滑切卡、轻点标题弹精简 BottomSheet",
+            "新增主题二 RUNWAY（实体跑道）：左侧 tnum 累计时间尺 + 右侧耗时成比例 0.5dp 几何任务块 + 中央固定 #FF4D00 NOW 瞄准框（吸附滚动与机械震动）及 4h 限界警戒线，仅当前 NOW 任务展开快捷操作"
+          ]
+        },
         {
           "version": "2.2.2",
           "date": "2026-11-26",

@@ -18,30 +18,39 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.2.0",
+      "latestVersion": "2.2.1",
       "updatedAt": "2026-11-26",
       "fileSize": "2.5 MB",
-      "fileName": "ZERO-v2.2.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.2.0-release.apk",
+      "fileName": "ZERO-v2.2.1-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.2.1-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.2.0-release.apk",
+          "fileName": "ZERO-v2.2.1-release.apk",
           "fileSize": "2.5 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.2.0-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.2.1-release.apk"
         }
       ],
-      "sha256": "529c7916a81d5348cc9c7b295b02840ac7109ab25dcfb26524ef4ee3c880e0ad",
+      "sha256": "392d3ec2d6fde8fc0ea0fee1cc3d48f99f10dd455b8c956fb1ad6655b1b6d242",
       "iconType": "zero",
       "highlights": [
         "极致视觉反差：NOW 页进入深邃暗场聚光灯舞台（#060608 呼吸光晕 + 3D 物理任务卡堆叠），对比 VAULT 强迫症精密等宽整理库",
+        "全新动态主题桌面图标：45° 宽体几何「ZERO」与平切完成度进度环「O」，跟随设置中的雾蓝/黑白/鼠尾草/暖陶土自动同步切换",
         "专治 ADHD 选择瘫痪与拖延启动：机械 3 拍「盲抽换卡」、卡片微动作「第一步破冰」及卡内原位心流计时变形",
-        "专治收集箱与逾期焦虑：全屏「30 秒闪电清仓」单手滑动分拣（上滑今天 / 右滑明天 / 左滑体面放弃 / 一键归档文件夹）",
         "触控人体工学与防误触：44–54dp 舒适拇指热区、0.35s 蓄力渐变光环完成、直板/折叠屏双栏/平板三栏 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.2.1",
+          "date": "2026-11-26",
+          "notes": [
+            "全新 45° 出框几何 ZERO 桌面图标：放宽字形与连续顺滑 R 弯弧、去掉 O 内细圈让完成进度环更纯粹，并支持 Android 13+ 单色主题图标",
+            "图标配色动态同步 App 强调色：在设置中切换雾蓝 / 极简黑白 / 鼠尾草绿 / 暖陶土时自动切换对应桌面图标",
+            "修复 NOW 暗场执行页在高分辨率折叠屏/大屏手机上左右滑无法切卡的单位偏差问题（96dp 密度自适应阈值）"
+          ]
+        },
         {
           "version": "2.2.0",
           "date": "2026-11-26",

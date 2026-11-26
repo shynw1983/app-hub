@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.1.2",
+      "latestVersion": "2.1.3",
       "updatedAt": "2026-11-26",
       "fileSize": "2.5 MB",
-      "fileName": "ZERO-v2.1.2-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.1.2/ZERO-v2.1.2-release.apk",
+      "fileName": "ZERO-v2.1.3-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.1.3-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.1.2-release.apk",
+          "fileName": "ZERO-v2.1.3-release.apk",
           "fileSize": "2.5 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.1.2/ZERO-v2.1.2-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.1.3-release.apk"
         }
       ],
-      "sha256": "02dd3369962f34755805149ff6c4e8af7d0207941ccd2f290345f4b157e7de5e",
+      "sha256": "860b3e5dc29e54a4970f3216cbfa3fffb0322f0b406216eb65e126c499146627",
       "iconType": "zero",
       "highlights": [
         "打破传统清单：底部拨片一键切换「NOW 单卡执行跑道」与「VAULT 强迫症整理库」，执行零过载、整理无上限",
@@ -42,6 +42,13 @@
         "触控人体工学重构：46–54dp 舒适拇指热区、全局标签与目录大操作面板、直板/折叠屏智能动态双栏/平板三栏 + WebDAV 同步 + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.1.3",
+          "date": "2026-11-26",
+          "notes": [
+            "将撤销提示条重绘为 42dp 高居中紧凑悬浮胶囊，以左侧 16dp 极细平滑环形倒计时取代底部进度条与跳动小数，并以 0.5dp 细竖线分隔无边框纯文字「撤销」操作"
+          ]
+        },
         {
           "version": "2.1.2",
           "date": "2026-11-26",

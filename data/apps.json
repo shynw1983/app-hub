@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.1.0",
+      "latestVersion": "2.1.1",
       "updatedAt": "2026-11-26",
-      "fileSize": "2.4 MB",
-      "fileName": "ZERO-v2.1.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.1.0/ZERO-v2.1.0-release.apk",
+      "fileSize": "2.5 MB",
+      "fileName": "ZERO-v2.1.1-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.1.1/ZERO-v2.1.1-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.1.0-release.apk",
-          "fileSize": "2.4 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.1.0/ZERO-v2.1.0-release.apk"
+          "fileName": "ZERO-v2.1.1-release.apk",
+          "fileSize": "2.5 MB",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.1.1/ZERO-v2.1.1-release.apk"
         }
       ],
-      "sha256": "c1d09d269b2ed63757afb061b657d7d635b53aaa8401ce5a80604b74dd0a4bb0",
+      "sha256": "1b045f0c0566a4606f4b4d965704cc6a059505dd16fb1f16fe477a6e33585050",
       "iconType": "zero",
       "highlights": [
         "打破传统清单：底部拨片一键切换「NOW 单卡执行跑道」与「VAULT 强迫症整理库」，执行零过载、整理无上限",
@@ -42,6 +42,16 @@
         "触控人体工学重构：46–54dp 舒适拇指热区、全局标签与目录大操作面板、直板/折叠屏智能动态双栏/平板三栏 + WebDAV 同步 + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.1.1",
+          "date": "2026-11-26",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.1.1/ZERO-v2.1.1-release.apk",
+          "notes": [
+            "短距离右拖并松手，将任务直接缩进为上一条任务的子任务。拖过完整阈值时，执行设置中的完整右滑动作。",
+            "在收集箱和单个文件夹的手动排序中，可以把任务拖入子任务之间。插入线会显示缩进位置，松手后按该位置调整顺序和层级。",
+            "缩进和拖动排序支持 3 秒撤销。旧版完整滑动的「设为子任务」选项会转为「无操作」。"
+          ]
+        },
         {
           "version": "2.1.0",
           "date": "2026-11-26",

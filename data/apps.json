@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.6.0",
+      "latestVersion": "2.7.0",
       "updatedAt": "2026-11-27",
       "fileSize": "2.7 MB",
-      "fileName": "ZERO-v2.6.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.6.0-release.apk",
+      "fileName": "ZERO-v2.7.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.7.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.6.0-release.apk",
+          "fileName": "ZERO-v2.7.0-release.apk",
           "fileSize": "2.7 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.6.0-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.7.0-release.apk"
         }
       ],
-      "sha256": "1702a20bf339efdc2f32f2aacfdaeed83afd374001b9e0574d3d171ab15d562a",
+      "sha256": "d6a1f37c080933cf7c611583eb9c8639ae4ade23d5f1b2ecc845f355326b2ccf",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.7.0",
+          "date": "2026-11-27",
+          "notes": [
+            "智能文件夹路径消歧（默认开启）：全局唯一目录（如 DAILY）保持简洁，不同项目下的同名子目录（如「清水店/経理」与「丸九/…/経理」）自动补全所属项目前缀，且父路径浅色弱显、末级目录清晰突出",
+            "设置页新增「文件夹路径显示」切换：支持「智能消歧」「项目 / 目录」「完整路径」三种模式；在打开父目录并开启「含子目录」时自动采用相对路径截断，剔除多余前缀",
+            "新增顶层项目色点（自动继承给全部子目录）：可为顶层项目文件夹设置 6 款哑光低饱和色点（雾蓝/鼠尾草/暖陶土/琥珀/灰紫/赤陶），列表卡片、MONOLITH、RUNWAY、详情顶栏、目录树、清仓卡片与移动弹窗均同步带点识别",
+            "全链路打通：全局搜索支持按父项目/完整路径检索子目录任务；详情页深层目录在标题上方展示完整「›」面包屑且严格维持 36dp 顶栏秩序；推送通知、桌面小组件与移动弹窗同步升级消歧路径显示"
+          ]
+        },
         {
           "version": "2.6.0",
           "date": "2026-11-27",

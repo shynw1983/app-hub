@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.8.1",
+      "latestVersion": "2.9.0",
       "updatedAt": "2026-11-27",
-      "fileSize": "2.7 MB",
-      "fileName": "ZERO-v2.8.1-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.8.1-release.apk",
+      "fileSize": "2.8 MB",
+      "fileName": "ZERO-v2.9.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.9.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.8.1-release.apk",
-          "fileSize": "2.7 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.8.1-release.apk"
+          "fileName": "ZERO-v2.9.0-release.apk",
+          "fileSize": "2.8 MB",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.9.0-release.apk"
         }
       ],
-      "sha256": "f1f374c39728c092740a32b31a291e881211ac31e5bf5159ceac1f7e27e052f0",
+      "sha256": "3f59f2b213c80445264d8bf9b26d465b11cc5b982f9f91182184b66a885a4be0",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,15 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.9.0",
+          "date": "2026-11-27",
+          "notes": [
+            "内置双引擎多模态 AI（Gemini / OpenAI 自由切换 · BYOK）：设置页支持分别保存 Gemini 与 OpenAI（及自定义兼容 Base URL）的 API Key 与模型，并支持一键测试连通性；所有 Key 仅存于本机",
+            "口语 / 粘贴 / 拍照识图一键建树：底部极速输入栏新增「📷 拍照识图」与「✦ AI 提取」入口，可直接拍纸质单据/信件或选微信/LINE 聊天截图，AI 结合当前目录树与标签树自动预览主任务、并行前置子任务、截止日、标签与第一步破冰，勾选后一键写入",
+            "任务详情与 MONOLITH 一键「✦ AI 拆解」：针对任意大任务自动生成 30 秒破冰「第一步」、耗时估档、跨场景并行子任务与单次执行 Markdown Checklist，勾选想要的项即可直接应用"
+          ]
+        },
         {
           "version": "2.8.1",
           "date": "2026-11-27",

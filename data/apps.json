@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.9.1",
+      "latestVersion": "2.9.2",
       "updatedAt": "2026-11-27",
       "fileSize": "2.8 MB",
-      "fileName": "ZERO-v2.9.1-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.9.1-release.apk",
+      "fileName": "ZERO-v2.9.2-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.9.2-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.9.1-release.apk",
+          "fileName": "ZERO-v2.9.2-release.apk",
           "fileSize": "2.8 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.9.1-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.9.2-release.apk"
         }
       ],
-      "sha256": "724e537af821d3f9e40d7ef53ce3115ed5aecebca2f2405a15044c0b4982a6e7",
+      "sha256": "f868d27b3f2bfe1d93a829bbf48125943e843fcc2c35faf524cecd5cac3516bf",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.9.2",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.9.2/ZERO-v2.9.2-release.apk",
+          "notes": [
+            "新增「紧急度标识样式」设置切换（3 选 1）：默认「极简信号点」（●●● / ●● / ●，未设紧急度列表静默隐藏），也可随时切换为「直觉文字」（紧急/重要/普通/无）或「感叹号」（!!!/!!/!），同步覆盖详情页、任务卡、AI 预览卡、四象限、快速输入与专注页",
+            "彻底修复 AI 解析中未识别出目录、日期或标签时错误显示「/null」与「null」的 Android JSON 解析问题",
+            "无匹配项目目录或未知紧急度时，默认归入收集箱（受信箱）与最低紧急度，并防止 AI 凭空虚构不存在的新目录"
+          ]
+        },
         {
           "version": "2.9.1",
           "date": "2026-11-27",

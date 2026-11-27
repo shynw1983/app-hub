@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.15.2",
+      "latestVersion": "2.16.0",
       "updatedAt": "2026-11-28",
       "fileSize": "3.1 MB",
-      "fileName": "ZERO-v2.15.2-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.15.2-release.apk",
+      "fileName": "ZERO-v2.16.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.16.0/ZERO-v2.16.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.15.2-release.apk",
+          "fileName": "ZERO-v2.16.0-release.apk",
           "fileSize": "3.1 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.15.2-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.16.0/ZERO-v2.16.0-release.apk"
         }
       ],
-      "sha256": "0d41110846672855309334604469563829da08983bc884f78a0ed6eb7597ac69",
+      "sha256": "f75ce26492062647de69fe3b7615537f2e7a751871e24cc6b101dc389b5937b0",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.16.0",
+          "date": "2026-11-28",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.16.0/ZERO-v2.16.0-release.apk",
+          "notes": [
+            "地点通知时机支持按任务覆盖（标签默认 + 单任务自定义）：地点标签保留默认触发时机（靠近 / 离开 / 靠近或离开），在任务详情中可针对单条任务覆盖触发时机（跟随标签默认 / 靠近时 / 离开时 / 靠近与离开），并完成 Room v4→v5 无损迁移与备份 v4 兼容",
+            "ATLAS 3D 空间光晕色彩微调加深：略微加深焦橙核心光晕显色度，在地图浅色与深色建筑底图下层次更清晰",
+            "AI 拆解 / AI 识别 / 语音输入添加前预编辑：语音极速输入识别后回填快速输入栏并聚焦确认；AI 智能提取预览卡支持标题内联修改及弹窗编辑备注、#标签与子任务；AI 拆解支持在应用前直接编辑第一步、子任务与清单文本"
+          ]
+        },
         {
           "version": "2.15.2",
           "date": "2026-11-28",

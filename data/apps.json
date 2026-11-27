@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.10.3",
+      "latestVersion": "2.10.4",
       "updatedAt": "2026-11-27",
       "fileSize": "2.8 MB",
-      "fileName": "ZERO-v2.10.3-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.3-release.apk",
+      "fileName": "ZERO-v2.10.4-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.4-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.10.3-release.apk",
+          "fileName": "ZERO-v2.10.4-release.apk",
           "fileSize": "2.8 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.3-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.4-release.apk"
         }
       ],
-      "sha256": "d81cdd13ee08195077d4c1fc6db4dc0026e0050ab1995c8918802fc9e12357ea",
+      "sha256": "718a60ae1d3734d03e7b746d7d70dfc53e83dee85e4699fc3db10d675e64ffe6",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,15 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.10.4",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.10.4/ZERO-v2.10.4-release.apk",
+          "notes": [
+            "清空全部内置词典与特定词对示例，改为纯粹的「全日语原生系统指令 + 语义重构翻译原则 + 用户消息二次锁定」，从指令机制本身检验并杜绝中文残留问题",
+            "OpenAI 设置预设补充 `gpt-4.1-mini` 与 `gpt-4.1` 一键切换，方便无拐杖对比不同模型的真实日文意译能力"
+          ]
+        },
         {
           "version": "2.10.3",
           "date": "2026-11-27",

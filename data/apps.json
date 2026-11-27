@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.14.1",
+      "latestVersion": "2.14.2",
       "updatedAt": "2026-11-27",
       "fileSize": "3.1 MB",
-      "fileName": "ZERO-v2.14.1-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.14.1-release.apk",
+      "fileName": "ZERO-v2.14.2-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.14.2-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.14.1-release.apk",
+          "fileName": "ZERO-v2.14.2-release.apk",
           "fileSize": "3.1 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.14.1-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.14.2-release.apk"
         }
       ],
-      "sha256": "927eb5c89ecef931900c9b53f16636830269117117cb66be6e980cec97f8d284",
+      "sha256": "db20c2a19f1a36ee229d765f9a9b57d438d74d5c383793aea218ddf7478454b4",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,15 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.14.2",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.14.2/ZERO-v2.14.2-release.apk",
+          "notes": [
+            "修复 ATLAS 任务卡片被极速输入框遮挡的问题：取消残留日期/草稿自动弹起输入框，打开输入栏时无论宽屏或竖屏任务卡都会优雅让位且点「×」必能收起",
+            "修复宽屏下左下角 Google 水印与任务卡片边角重叠的边距问题"
+          ]
+        },
         {
           "version": "2.14.1",
           "date": "2026-11-27",

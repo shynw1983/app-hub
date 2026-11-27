@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.7.0",
+      "latestVersion": "2.8.0",
       "updatedAt": "2026-11-27",
       "fileSize": "2.7 MB",
-      "fileName": "ZERO-v2.7.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.7.0-release.apk",
+      "fileName": "ZERO-v2.8.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.8.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.7.0-release.apk",
+          "fileName": "ZERO-v2.8.0-release.apk",
           "fileSize": "2.7 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.7.0-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.8.0-release.apk"
         }
       ],
-      "sha256": "d6a1f37c080933cf7c611583eb9c8639ae4ade23d5f1b2ecc845f355326b2ccf",
+      "sha256": "0661b60b495c2ed1421c9e1cdc782b7d430c30609c8744abf7c4885f94be9f2e",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.8.0",
+          "date": "2026-11-27",
+          "notes": [
+            "NOW 跑道升级为「叶节点并行准入」引擎：含未完成子任务的父任务自动视为阻塞并从 NOW 与 4h 容量条隐身，避免出现“现在做不完的幽灵任务”及工时重复累计；所有前置子任务并行顶上跑道，最后一条子任务划掉的瞬间主任务自动解锁收尾",
+            "子任务智能继承与动态联动：未单独设日期的子任务动态跟随主任务截止日（主任务推迟则子任务同步退出今日 NOW），未设优先级自动继承主任务优先级；详情页「添加子任务」原生支持 #标签、明天、!1 极速语法一行建子任务",
+            "执行页父任务上下文锚点：MONOLITH 独石与 RUNWAY 跑道在焦点子任务卡片上显示柔和的「↳ 主任务标题」，随时清楚前置步骤的最终目标",
+            "效率细节打通：子任务详情的快捷标签栏自动把主任务已有标签置顶高亮以便一键复用；移动主任务到其他目录时自动级联同步所有子孙任务所属目录"
+          ]
+        },
         {
           "version": "2.7.0",
           "date": "2026-11-27",

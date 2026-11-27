@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.15.0",
+      "latestVersion": "2.15.1",
       "updatedAt": "2026-11-28",
       "fileSize": "3.1 MB",
-      "fileName": "ZERO-v2.15.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.15.0-release.apk",
+      "fileName": "ZERO-v2.15.1-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.15.1-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.15.0-release.apk",
+          "fileName": "ZERO-v2.15.1-release.apk",
           "fileSize": "3.1 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.15.0-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.15.1-release.apk"
         }
       ],
-      "sha256": "0bc8ef00f14ac0a57f79df8cf52c7d8235e8670725bc4d652f1cafa97b7a2f59",
+      "sha256": "83b563e6943f381be0fb90ead54fc4e22f0f90c2e966eae5bd1a9f65f738104f",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.15.1",
+          "date": "2026-11-28",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.15.1/ZERO-v2.15.1-release.apk",
+          "notes": [
+            "连续流体光带路径：彻底移除颗粒状子弹光点，改为全段连贯的双层线性渐变 SignalOrange 光带，高光波峰如液体般沿路径顺滑流动",
+            "100% 无边界羽化光晕：移除定位点、地标建筑、围栏光池、朝向光锥、蓄力完成与消散波的所有生硬描边线，全部改用多层级无边框径向渐变光晕并加深核心橙色显色度",
+            "有机正弦呼吸感：全动态效果统一改用对称正弦缓入缓出双向呼吸节奏，彻底告别生硬跳跃与闪烁"
+          ]
+        },
         {
           "version": "2.15.0",
           "date": "2026-11-28",

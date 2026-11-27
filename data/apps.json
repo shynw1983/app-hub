@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.13.1",
+      "latestVersion": "2.13.2",
       "updatedAt": "2026-11-27",
       "fileSize": "3.1 MB",
-      "fileName": "ZERO-v2.13.1-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.13.1-release.apk",
+      "fileName": "ZERO-v2.13.2-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.13.2-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.13.1-release.apk",
+          "fileName": "ZERO-v2.13.2-release.apk",
           "fileSize": "3.1 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.13.1-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.13.2-release.apk"
         }
       ],
-      "sha256": "4428511e51f9ebc2f2f3e40bc4c28bfc7d17744208354fd8333046a2117442ad",
+      "sha256": "7a6a9162c70b80d4df93955363b407e6e78b08486412e8097726cb55ee4f55d3",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,15 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.13.2",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.13.2/ZERO-v2.13.2-release.apk",
+          "notes": [
+            "修复日本/中文等地址搜索场所名显示为门牌号的问题：智能过滤「１８」「1-18」「〒815-0082」等纯门牌/邮编标签，用谷歌地图商户名搜索时完整保留商户名称（同时保留 7-Eleven、ローソンストア100 等含数字的真实店名）",
+            "优化 GPS「添加当前位置」及 Nominatim 逆地理编码回退：当底图返回的 featureName 仅为门牌号时，自动选取可读地段名（如「大楠１丁目」）"
+          ]
+        },
         {
           "version": "2.13.1",
           "date": "2026-11-27",

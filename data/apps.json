@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.11.2",
+      "latestVersion": "2.12.0",
       "updatedAt": "2026-11-27",
-      "fileSize": "2.8 MB",
-      "fileName": "ZERO-v2.11.2-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.11.2-release.apk",
+      "fileSize": "3.0 MB",
+      "fileName": "ZERO-v2.12.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.12.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.11.2-release.apk",
-          "fileSize": "2.8 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.11.2-release.apk"
+          "fileName": "ZERO-v2.12.0-release.apk",
+          "fileSize": "3.0 MB",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.12.0-release.apk"
         }
       ],
-      "sha256": "a9b2fb053e4348a8e32275e448e029bce13508371a654eda49b8592d75535d46",
+      "sha256": "a5a67beb166ac4a43fbbd419ab265efd4ed385c2c38fd95511645acbe416922a",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.12.0",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.12.0/ZERO-v2.12.0-release.apk",
+          "notes": [
+            "全新「场所标签与多地址电子围栏」：任意标签可设为场所标签，自定义靠近（Arrive）/ 离开（Leave）/ 靠近和离开触发条件，并绑定 1 个特定地址（如家/公司）或多个常去门店地址（如多家便利店，靠近任一家立即推送该标签下未完成待办）",
+            "一键添地点与测试预览：支持当前 GPS 一键定位逆地理编码、搜店名/地址（OSM Nominatim + 系统 Geocoder）、直接粘贴谷歌地图链接或经纬度，支持调整触发半径（100/150/300/500m）、单点启停与通知测试",
+            "省电系统围栏与完整备份：优先采用 Play Services 硬件围栏（无 GMS 机型自动降级 LocationManager 接近提醒）+ 30 分钟防打扰冷却 + 重启/升级自动重注册；Room 数据库无损升级至 v4，JSON/WebDAV 备份同步支持多地址导出导入（中/英/日/韩 4 语完整支持）"
+          ]
+        },
         {
           "version": "2.11.2",
           "date": "2026-11-27",

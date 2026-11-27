@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.10.1",
+      "latestVersion": "2.10.2",
       "updatedAt": "2026-11-27",
       "fileSize": "2.8 MB",
-      "fileName": "ZERO-v2.10.1-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.1-release.apk",
+      "fileName": "ZERO-v2.10.2-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.2-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.10.1-release.apk",
+          "fileName": "ZERO-v2.10.2-release.apk",
           "fileSize": "2.8 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.1-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.2-release.apk"
         }
       ],
-      "sha256": "da778ea026253066e7086b01eeb5ed816ce884582bd529d5108db34a881e0856",
+      "sha256": "120c4bc8e61c0f236db3328f094f9a33d1743812442104f3b401c430e541900c",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,15 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.10.2",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.10.2/ZERO-v2.10.2-release.apk",
+          "notes": [
+            "语音录入升级「说完停顿自动结束」：内置自适应静音检测（Adaptive VAD），根据环境底噪实时判断，说话结束停顿 1.6 秒即自动停录并送交 AI 提取；句中短停顿不误断，7 秒无人说话自动取消不浪费额度",
+            "录音状态条新增实时 3 格声波电平反馈，同时保留「说完提取」按钮供嘈杂环境下随时手动提前结束"
+          ]
+        },
         {
           "version": "2.10.1",
           "date": "2026-11-27",

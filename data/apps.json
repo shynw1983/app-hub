@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.10.4",
+      "latestVersion": "2.10.5",
       "updatedAt": "2026-11-27",
       "fileSize": "2.8 MB",
-      "fileName": "ZERO-v2.10.4-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.4-release.apk",
+      "fileName": "ZERO-v2.10.5-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.5-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.10.4-release.apk",
+          "fileName": "ZERO-v2.10.5-release.apk",
           "fileSize": "2.8 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.4-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.5-release.apk"
         }
       ],
-      "sha256": "718a60ae1d3734d03e7b746d7d70dfc53e83dee85e4699fc3db10d675e64ffe6",
+      "sha256": "c3115e370ff7ce557f00b3a92169afd6fcf65789bfe3d09865713cec4a6d2c30",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,14 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.10.5",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.10.5/ZERO-v2.10.5-release.apk",
+          "notes": [
+            "OpenAI 设置新增 `gpt-6-luna` 一键预设标签，并自动兼容 GPT-6 / GPT-5 / o 系列推理模型请求参数（省略不兼容的 `temperature` 字段以防 400 报错）"
+          ]
+        },
         {
           "version": "2.10.4",
           "date": "2026-11-27",

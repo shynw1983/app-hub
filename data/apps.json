@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.10.5",
+      "latestVersion": "2.10.6",
       "updatedAt": "2026-11-27",
       "fileSize": "2.8 MB",
-      "fileName": "ZERO-v2.10.5-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.5-release.apk",
+      "fileName": "ZERO-v2.10.6-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.6-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.10.5-release.apk",
+          "fileName": "ZERO-v2.10.6-release.apk",
           "fileSize": "2.8 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.5-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.6-release.apk"
         }
       ],
-      "sha256": "c3115e370ff7ce557f00b3a92169afd6fcf65789bfe3d09865713cec4a6d2c30",
+      "sha256": "381730ffa598528df04c7767731406f0e5e973701cb22d1da72c8c27bedb2624",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,15 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.10.6",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.10.6/ZERO-v2.10.6-release.apk",
+          "notes": [
+            "AI 设置新增「模型深度思考（Reasoning）：关闭（更快）/ 轻度 / 中等」三档开关（默认关闭）",
+            "选用 `gpt-6-luna` / GPT-5 等模型时，随开关传递 `reasoning_effort`（none / low / medium）并自动匹配 `temperature` 参数；使用 Gemini 2.5 Flash 时同步控制 `thinkingBudget`，方便直接对比关闭与轻度思考的效果差异"
+          ]
+        },
         {
           "version": "2.10.5",
           "date": "2026-11-27",

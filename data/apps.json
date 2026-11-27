@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.9.2",
+      "latestVersion": "2.10.0",
       "updatedAt": "2026-11-27",
       "fileSize": "2.8 MB",
-      "fileName": "ZERO-v2.9.2-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.9.2-release.apk",
+      "fileName": "ZERO-v2.10.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.9.2-release.apk",
+          "fileName": "ZERO-v2.10.0-release.apk",
           "fileSize": "2.8 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.9.2-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.0-release.apk"
         }
       ],
-      "sha256": "f868d27b3f2bfe1d93a829bbf48125943e843fcc2c35faf524cecd5cac3516bf",
+      "sha256": "5c7568a6d7e41ef12c3c1a606ff8cf829aac6ea46a3f3bc12bb3add56e02c9dd",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,17 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.10.0",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.10.0/ZERO-v2.10.0-release.apk",
+          "notes": [
+            "长按 `✦` 口语直通 AI & 弹窗语音按钮：任意语种自由口述，说完自动按当前界面语言精简总结为新闻标题体任务",
+            "AI 预览卡片就地微调：写入前直接点击卡片上的「受信箱/目录」改归属项目、点日期/+日期呼出小日历或清除、点右上角优先级切换轻重",
+            "跨应用系统分享直达 ZERO AI：从微信、LINE、相册、邮件将文字或截图「分享」到「ZERO · AI 提取」即可自动识别拆解",
+            "修复 AI 翻译生硬与无意义「第一步」：禁用中译日生造汉字词（如后备箱→トランク、手机→スマホ），简单物理任务默认不硬凑「打开后备箱」式废话第一步"
+          ]
+        },
         {
           "version": "2.9.2",
           "date": "2026-11-27",

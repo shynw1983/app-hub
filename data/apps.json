@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.15.1",
+      "latestVersion": "2.15.2",
       "updatedAt": "2026-11-28",
       "fileSize": "3.1 MB",
-      "fileName": "ZERO-v2.15.1-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.15.1-release.apk",
+      "fileName": "ZERO-v2.15.2-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.15.2-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.15.1-release.apk",
+          "fileName": "ZERO-v2.15.2-release.apk",
           "fileSize": "3.1 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.15.1-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.15.2-release.apk"
         }
       ],
-      "sha256": "83b563e6943f381be0fb90ead54fc4e22f0f90c2e966eae5bd1a9f65f738104f",
+      "sha256": "0d41110846672855309334604469563829da08983bc884f78a0ed6eb7597ac69",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,15 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.15.2",
+          "date": "2026-11-28",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.15.2/ZERO-v2.15.2-release.apk",
+          "notes": [
+            "零断层连续渐变 3D 光晕：改用 256×256 逐像素高斯渐变的原生 Google Maps GroundOverlay 纹理替代多层叠加圆圈与方向三角，彻底消除年轮式色阶断层",
+            "场所地点名称随时可编辑：无论是通过「添加当前位置」还是地址/商户搜索选中地点，均可立即在确认弹窗修改展示名称与围栏半径；已保存地点列表也新增「编辑」图标按钮"
+          ]
+        },
         {
           "version": "2.15.1",
           "date": "2026-11-28",

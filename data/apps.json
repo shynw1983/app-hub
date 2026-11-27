@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.5.0",
-      "updatedAt": "2026-11-26",
+      "latestVersion": "2.5.1",
+      "updatedAt": "2026-11-27",
       "fileSize": "2.6 MB",
-      "fileName": "ZERO-v2.5.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.5.0-release.apk",
+      "fileName": "ZERO-v2.5.1-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.5.1-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.5.0-release.apk",
+          "fileName": "ZERO-v2.5.1-release.apk",
           "fileSize": "2.6 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.5.0-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.5.1-release.apk"
         }
       ],
-      "sha256": "5ad7dea477487c22cd53c160a35f5de92320b4a04d7b793d7df4d1c3ec47e62b",
+      "sha256": "d063b51988d8bdf0aafc8c5b0efc8ee98e2c248e1552c9f9a9fb70b481517628",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,14 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.5.1",
+          "date": "2026-11-27",
+          "notes": [
+            "精修双栏与详情页控件尺寸秩序：将排序（手动）、目录（经理）、2分、完了全部锁定为严格 36dp 等高与一致的 labelMedium 字号，所有顶栏图标统一为 36dp，详情顶栏行高对齐为 38dp，三栏水平分割线完全齐平",
+            "详情页标签区全面齐平：已有标签胶囊、新增标签输入框与快捷建议标签全部统一锁定为精确 34dp 高度与居中基线，彻底告别高低错落"
+          ]
+        },
         {
           "version": "2.5.0",
           "date": "2026-11-26",

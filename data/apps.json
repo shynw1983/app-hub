@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.13.2",
+      "latestVersion": "2.14.0",
       "updatedAt": "2026-11-27",
       "fileSize": "3.1 MB",
-      "fileName": "ZERO-v2.13.2-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.13.2-release.apk",
+      "fileName": "ZERO-v2.14.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.14.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.13.2-release.apk",
+          "fileName": "ZERO-v2.14.0-release.apk",
           "fileSize": "3.1 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.13.2-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.14.0-release.apk"
         }
       ],
-      "sha256": "7a6a9162c70b80d4df93955363b407e6e78b08486412e8097726cb55ee4f55d3",
+      "sha256": "00cd7185498f416fc3bf49c5e492a964d54f940a6647755f950097cc27c3b3ce",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,17 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.14.0",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.14.0/ZERO-v2.14.0-release.apk",
+          "notes": [
+            "纯净 3D 建筑沙盘底图：全面隐藏小巷编号文字与地块噪声，升级深色夜碳建筑群 & 浅色建筑陶瓷双配色，立体楼宇与水系轮廓大幅提纯",
+            "3D 垂直能量光柱信标 + 双层发光路线：每个任务据点升级为地面光圈 + 竖直渐变光柱 + 顶部店名任务胶囊；玩家与选中围栏新增丝滑不闪烁雷达扫描脉冲环",
+            "顶部实时战术指南针刻度带 + 视角联动：内置跟随陀螺仪滚动的 140° 罗盘刻度带（实时显示方位角与目标方向菱形标），右侧收纳为一体化毛玻璃工具条并新增「罗盘跟随」视角",
+            "大气渐隐暗角 & 瘦身 HUD：屏幕上下缘增加大气氛围渐变与高对比度毛玻璃遮罩，彻底消除路名穿模；底部任务卡与极速栏进一步瘦身，把大屏还给 3D 地图"
+          ]
+        },
         {
           "version": "2.13.2",
           "date": "2026-11-27",

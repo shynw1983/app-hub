@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.13.0",
+      "latestVersion": "2.13.1",
       "updatedAt": "2026-11-27",
       "fileSize": "3.1 MB",
-      "fileName": "ZERO-v2.13.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.13.0-release.apk",
+      "fileName": "ZERO-v2.13.1-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.13.1-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.13.0-release.apk",
+          "fileName": "ZERO-v2.13.1-release.apk",
           "fileSize": "3.1 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.13.0-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.13.1-release.apk"
         }
       ],
-      "sha256": "c2f03f280e9f7c29ecfa821a47c2b5816366f3f673d965dc17318ff6a680c9c5",
+      "sha256": "4428511e51f9ebc2f2f3e40bc4c28bfc7d17744208354fd8333046a2117442ad",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.13.1",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.13.1/ZERO-v2.13.1-release.apk",
+          "notes": [
+            "全屏沉浸式 3D 地图：在 ATLAS 模式下，谷歌 3D 地图全幅铺满整个屏幕（延伸至状态栏与导航栏底部），带来真正开放世界雷达视感",
+            "半透明毛玻璃悬浮 Chrome：顶部 NOW 状态栏、底部极速捕捉框与最下方「执行 ⇄ 整理库」切换胶囊全面升级为半透明毛玻璃浮层（含高光顶边与细边框），随浅色/深色地图一键切换自适应对比度；地图视角也同步做上下安全区偏移，绝不遮挡中心焦点",
+            "深色地图可读性提亮 + 地点由近及远精准排序：将深色地图底图提亮为高对比度战术午夜灰蓝（建筑/路网/河流/路牌一目了然）；地点搜索改用本地范围优先召回（合并 Nominatim + 系统 Geocoder）并严格按离当前位置由近到远排序"
+          ]
+        },
         {
           "version": "2.13.0",
           "date": "2026-11-27",

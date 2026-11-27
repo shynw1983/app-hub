@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.14.0",
+      "latestVersion": "2.14.1",
       "updatedAt": "2026-11-27",
       "fileSize": "3.1 MB",
-      "fileName": "ZERO-v2.14.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.14.0-release.apk",
+      "fileName": "ZERO-v2.14.1-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.14.1-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.14.0-release.apk",
+          "fileName": "ZERO-v2.14.1-release.apk",
           "fileSize": "3.1 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.14.0-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.14.1-release.apk"
         }
       ],
-      "sha256": "00cd7185498f416fc3bf49c5e492a964d54f940a6647755f950097cc27c3b3ce",
+      "sha256": "927eb5c89ecef931900c9b53f16636830269117117cb66be6e980cec97f8d284",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.14.1",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.14.1/ZERO-v2.14.1-release.apk",
+          "notes": [
+            "现代建筑极简重构：彻底移除复古战术罗盘尺、竖直光柱与高频闪烁雷达脉冲；回归冷静克制的 ZERO 主题色与柔和投影悬浮质感",
+            "宽屏 / 折叠屏与竖屏响应式排版：极速输入框默认折叠收起（右上角「+」随时呼出）；展开宽屏下任务卡自动靠左精简为 312dp 悬浮小卡，右侧与中央大面积留给 3D 城市建筑群",
+            "极简两行任务卡与干净浮标：任务卡压缩为「地标+导航」与「任务+内联长按完成」两行，地图信标升级为带细投影与小三角指针的纯净悬浮胶囊"
+          ]
+        },
         {
           "version": "2.14.0",
           "date": "2026-11-27",

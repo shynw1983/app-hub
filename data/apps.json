@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.14.2",
-      "updatedAt": "2026-11-27",
+      "latestVersion": "2.15.0",
+      "updatedAt": "2026-11-28",
       "fileSize": "3.1 MB",
-      "fileName": "ZERO-v2.14.2-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.14.2-release.apk",
+      "fileName": "ZERO-v2.15.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.15.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.14.2-release.apk",
+          "fileName": "ZERO-v2.15.0-release.apk",
           "fileSize": "3.1 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.14.2-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.15.0-release.apk"
         }
       ],
-      "sha256": "db20c2a19f1a36ee229d765f9a9b57d438d74d5c383793aea218ddf7478454b4",
+      "sha256": "0bc8ef00f14ac0a57f79df8cf52c7d8235e8670725bc4d652f1cafa97b7a2f59",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.15.0",
+          "date": "2026-11-28",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.15.0/ZERO-v2.15.0-release.apk",
+          "notes": [
+            "恢复统一工业橙点睛高光（SignalOrange）：ATLAS 的精选路径、激活信标、底部切换胶囊与呼吸状态点全面回归 ZERO 标志性的高纯度工业橙，与极简黑白灰建筑底图形成锐利对比",
+            "新增 60fps GPU 空间矢量动效层：电影级 3D 航拍俯冲入场、切点视差滑翔镜头、沿路匀速流向目标建筑的工业橙流光轨迹，以及柔和定位呼吸微光",
+            "蓄力完成手势与空间扩散波联动：长按 0.3s 完成时地图目标建筑同步收紧橙色蓄力进度环，完成瞬间绽放单层建筑感冲击波纹与 8 向火花；任务切换与浮层入场加入弹簧微交互"
+          ]
+        },
         {
           "version": "2.14.2",
           "date": "2026-11-27",

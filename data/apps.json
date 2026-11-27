@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.10.2",
+      "latestVersion": "2.10.3",
       "updatedAt": "2026-11-27",
       "fileSize": "2.8 MB",
-      "fileName": "ZERO-v2.10.2-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.2-release.apk",
+      "fileName": "ZERO-v2.10.3-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.3-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.10.2-release.apk",
+          "fileName": "ZERO-v2.10.3-release.apk",
           "fileSize": "2.8 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.2-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.3-release.apk"
         }
       ],
-      "sha256": "120c4bc8e61c0f236db3328f094f9a33d1743812442104f3b401c430e541900c",
+      "sha256": "d81cdd13ee08195077d4c1fc6db4dc0026e0050ab1995c8918802fc9e12357ea",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.10.3",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.10.3/ZERO-v2.10.3-release.apk",
+          "notes": [
+            "彻底压制中文输入在日文界面下残留简体中文的问题：系统指令与用户消息均改用全日语原生设定，强制意译并内置在日生活高频词表（如「煤炉上架 → メルカリ出品」、「支付方式变更 → 支払い方法変更」、「后备箱 → トランク」）",
+            "设置页 AI 区域新增「个人 AI 术语词表与偏好规则（选填）」多行输入框，可随时补充你自己的高频词映射与格式偏好",
+            "修复 AI 智能抽出弹窗顶部「音声入力」按钮在窄屏下被右侧裁剪的问题，改为 3 等分完整展示"
+          ]
+        },
         {
           "version": "2.10.2",
           "date": "2026-11-27",

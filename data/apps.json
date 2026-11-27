@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.12.0",
+      "latestVersion": "2.13.0",
       "updatedAt": "2026-11-27",
-      "fileSize": "3.0 MB",
-      "fileName": "ZERO-v2.12.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.12.0-release.apk",
+      "fileSize": "3.1 MB",
+      "fileName": "ZERO-v2.13.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.13.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.12.0-release.apk",
-          "fileSize": "3.0 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.12.0-release.apk"
+          "fileName": "ZERO-v2.13.0-release.apk",
+          "fileSize": "3.1 MB",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.13.0-release.apk"
         }
       ],
-      "sha256": "a5a67beb166ac4a43fbbd419ab265efd4ed385c2c38fd95511645acbe416922a",
+      "sha256": "c2f03f280e9f7c29ecfa821a47c2b5816366f3f673d965dc17318ff6a680c9c5",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.13.0",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.13.0/ZERO-v2.13.0-release.apk",
+          "notes": [
+            "全新 NOW 主题「ATLAS · 3D 任务地图」：接入 Google Maps SDK（55° 倾斜 3D 立体建筑 ⇄ 2D 全局切换），把带有场所标签的未完成待办直接投影到现实地图中",
+            "深色 / 浅色双底图与雷达视角：内置黑曜石深色 / 冷纸浅色极简建筑地图样式并配右上角一键切换按钮；实时显示主角定位点、随手机指南针旋转的扇形朝向光锥、地面围栏触发圈与最近邻顺路虚线",
+            "多据点智能标亮与防误触操作：多分店标签自动高亮最近门店并在走入围栏时点亮边框；底部悬浮据点任务卡支持 0.3s 蓄力防误触完成、多任务翻页与一键调起谷歌地图导航；不限地点的常规任务收纳在「随时可做」快捷抽屉中"
+          ]
+        },
         {
           "version": "2.12.0",
           "date": "2026-11-27",

@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.10.6",
+      "latestVersion": "2.11.0",
       "updatedAt": "2026-11-27",
       "fileSize": "2.8 MB",
-      "fileName": "ZERO-v2.10.6-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.6-release.apk",
+      "fileName": "ZERO-v2.11.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.11.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.10.6-release.apk",
+          "fileName": "ZERO-v2.11.0-release.apk",
           "fileSize": "2.8 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.6-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.11.0-release.apk"
         }
       ],
-      "sha256": "381730ffa598528df04c7767731406f0e5e973701cb22d1da72c8c27bedb2624",
+      "sha256": "ff02bcb873a237f14633598d26c17801e955a2b37e45d5846d41d38088a8e053",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.11.0",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.11.0/ZERO-v2.11.0-release.apk",
+          "notes": [
+            "AI 智能提取 GTD 结构化升级（零硬编码词典）：纯原则指令拆解“未来事件/截止日期 vs 提前准备子任务（自动设为今天等更早日期以直接进入 NOW 跑道）”",
+            "短标题与清单分离：强制 ≤12 字/2-5 词新闻标题，区分独立前置子任务（subtasks）与同次并行检查项（checklistItems，自动存为任务备注内 - [ ] 复选清单）",
+            "Leaf-Only NOW 纪律与预览优化：含子任务的父级默认并确定性清空 firstStep；预览卡片直接显示子任务提前日期与 checklist；点击分析后自动收起键盘留出完整预览区"
+          ]
+        },
         {
           "version": "2.10.6",
           "date": "2026-11-27",

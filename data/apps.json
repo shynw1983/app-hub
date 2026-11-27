@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.10.0",
+      "latestVersion": "2.10.1",
       "updatedAt": "2026-11-27",
       "fileSize": "2.8 MB",
-      "fileName": "ZERO-v2.10.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.0-release.apk",
+      "fileName": "ZERO-v2.10.1-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.1-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.10.0-release.apk",
+          "fileName": "ZERO-v2.10.1-release.apk",
           "fileSize": "2.8 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.0-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/latest/download/ZERO-v2.10.1-release.apk"
         }
       ],
-      "sha256": "5c7568a6d7e41ef12c3c1a606ff8cf829aac6ea46a3f3bc12bb3add56e02c9dd",
+      "sha256": "da778ea026253066e7086b01eeb5ed816ce884582bd529d5108db34a881e0856",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,15 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.10.1",
+          "date": "2026-11-27",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.10.1/ZERO-v2.10.1-release.apk",
+          "notes": [
+            "彻底摆脱「本机没有语音识别服务」限制：内置轻量 AAC 录音机，长按底部 `✦` 或在 AI 弹窗点「语音输入」即可直接录音（带实时计时条），说完一键直传 Gemini 原生音频 / OpenAI Whisper 完成任意语种转写与新闻体任务总结",
+            "修复 Android 11+ `<queries>` 包可见性限制：补齐系统语音识别 Intent 声明，当麦克风离线语音不可用但已配置 AI Key 时，自动无缝切换为 ZERO 内置 AI 语音录音录入"
+          ]
+        },
         {
           "version": "2.10.0",
           "date": "2026-11-27",

@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.19.0",
+      "latestVersion": "2.19.1",
       "updatedAt": "2026-11-28",
       "fileSize": "91.5 MB",
-      "fileName": "ZERO-v2.19.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.0/ZERO-v2.19.0-release.apk",
+      "fileName": "ZERO-v2.19.1-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.1/ZERO-v2.19.1-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.19.0-release.apk",
+          "fileName": "ZERO-v2.19.1-release.apk",
           "fileSize": "91.5 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.0/ZERO-v2.19.0-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.1/ZERO-v2.19.1-release.apk"
         }
       ],
-      "sha256": "00b27f32360d95797a503e93f45c1c147da9b29833de64b67481199b5f07292a",
+      "sha256": "a26430057ad0f218837ad4e82d89d9844c441d2e2dda8b6c756cb2864164faa9",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,15 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.19.1",
+          "date": "2026-11-28",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.1/ZERO-v2.19.1-release.apk",
+          "notes": [
+            "修复 ATLAS 的 Mapbox 地名始终显示英语的问题。标准和卫星底图会优先使用 ZERO 的语言设置，选择「跟随系统」时使用设备语言。",
+            "中文地名支持简体和繁体。缺少对应译名时，地图会显示当地名称。"
+          ]
+        },
         {
           "version": "2.19.0",
           "date": "2026-11-28",

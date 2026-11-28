@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.16.1",
+      "latestVersion": "2.17.0",
       "updatedAt": "2026-11-28",
       "fileSize": "3.1 MB",
-      "fileName": "ZERO-v2.16.1-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.16.1/ZERO-v2.16.1-release.apk",
+      "fileName": "ZERO-v2.17.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.17.0/ZERO-v2.17.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.16.1-release.apk",
+          "fileName": "ZERO-v2.17.0-release.apk",
           "fileSize": "3.1 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.16.1/ZERO-v2.16.1-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.17.0/ZERO-v2.17.0-release.apk"
         }
       ],
-      "sha256": "71f0501b1efff51ad95c49e64eccb35cab4682b06eccb000c859319c9cf9cd1f",
+      "sha256": "3c75ac4754469e89f4dd4e80f2499468d5b2712f53ee92d6c7b8cdabc203b6b3",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,20 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.17.0",
+          "date": "2026-11-28",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.17.0/ZERO-v2.17.0-release.apk",
+          "notes": [
+            "查找任务更方便：在搜索、标签、日期筛选和矩阵中长按任务，可打开所属项目或最上层主任务。",
+            "地点围栏支持 1、2、3 公里半径。已保存地点直接显示完整名称和地址，没有地址时显示坐标。",
+            "任务负荷新增 2 小时档。标签可在同级上移、下移，顺序随备份保存和恢复。",
+            "循环任务支持「跳过本次」和撤销。漏做时会推进到今天或之后的下一次计划日期，保留循环规则。",
+            "短右滑对齐子任务层级：一级任务紧跟二级任务时，可滑成同级。",
+            "修复 AI 弹窗接收过期结果、移动子标签后漏发地点提醒，以及并发修改时导出的备份数据不一致。",
+            "Room 从 v5 无损迁移到 v6，新版可恢复 v1–v5 格式的 JSON 备份。"
+          ]
+        },
         {
           "version": "2.16.1",
           "date": "2026-11-28",

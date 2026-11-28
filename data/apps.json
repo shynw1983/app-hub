@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.18.1",
+      "latestVersion": "2.19.0",
       "updatedAt": "2026-11-28",
-      "fileSize": "3.2 MB",
-      "fileName": "ZERO-v2.18.1-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.18.1/ZERO-v2.18.1-release.apk",
+      "fileSize": "91.5 MB",
+      "fileName": "ZERO-v2.19.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.0/ZERO-v2.19.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.18.1-release.apk",
-          "fileSize": "3.2 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.18.1/ZERO-v2.18.1-release.apk"
+          "fileName": "ZERO-v2.19.0-release.apk",
+          "fileSize": "91.5 MB",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.0/ZERO-v2.19.0-release.apk"
         }
       ],
-      "sha256": "69f9cc6e97b37307d8295c912355714d54225c21d8597feb03dd53b76158a79e",
+      "sha256": "00b27f32360d95797a503e93f45c1c147da9b29833de64b67481199b5f07292a",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.19.0",
+          "date": "2026-11-28",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.0/ZERO-v2.19.0-release.apk",
+          "notes": [
+            "从执行主题选择打开「ATLAS 地图设置」，可切换 Google 地图和 Mapbox。Mapbox 提供标准与卫星样式，选择会在重启后保留。",
+            "Mapbox 首次启用时，请在应用内填写 pk. 开头的公开访问令牌。",
+            "优化启动镜头。地图优先从当前位置打开，定位晚到时会直接居中，避免从默认位置飞回。你手动拖动地图后，ATLAS 会保留你选的视角。"
+          ]
+        },
         {
           "version": "2.18.1",
           "date": "2026-11-28",

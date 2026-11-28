@@ -9,31 +9,41 @@
       "id": "zero",
       "name": "ZERO",
       "githubRepo": "shynw1983/zero",
-      "assetMatcher": ".apk",
+      "assetMatcher": "-release.apk",
       "tagline": "为强迫症 × 拖延症打造的双态待办仪器 · NOW 单卡跑道 · 30 秒闪电清仓 · 无限目录",
       "description": "原生 Android（Kotlin + Jetpack Compose + Material 3 Adaptive）极简待办与专注系统，将「零阻力极速捕捉」与「强迫症级精密整理」彻底解耦。支持直板机 / 折叠屏 / 平板三端自适应、无限级目录树、0.3s 蓄力 / 30% 阻尼防误触完成、本地中文 NLP 极速输入、等宽日历、先做 2 分钟无缝续接番茄钟及两款极简深色桌面小组件。",
       "category": "效率待办",
       "platforms": [
         "Android"
       ],
-      "arch": "Universal (arm64 / armv7)",
+      "arch": "ARM64 / 通用",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.19.4",
+      "latestVersion": "2.20.0",
       "updatedAt": "2026-11-29",
-      "fileSize": "91.5 MB",
-      "fileName": "ZERO-v2.19.4-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.4/ZERO-v2.19.4-release.apk",
+      "fileSize": "91.6 MB",
+      "fileName": "ZERO-v2.20.0-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.20.0/ZERO-v2.20.0-release.apk",
       "downloads": [
         {
           "platform": "Android",
-          "label": "Android (.apk)",
-          "matcher": ".apk",
-          "fileName": "ZERO-v2.19.4-release.apk",
-          "fileSize": "91.5 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.4/ZERO-v2.19.4-release.apk"
+          "label": "Android ARM64 · 精简版",
+          "matcher": "-arm64.apk",
+          "fileName": "ZERO-v2.20.0-arm64.apk",
+          "fileSize": "27.1 MB",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.20.0/ZERO-v2.20.0-arm64.apk",
+          "sha256": "726a5c52600745d7affccbe7c482b4415dab9591a3c4ac100f54bd1f927f10eb"
+        },
+        {
+          "platform": "Android",
+          "label": "Android 通用版",
+          "matcher": "-release.apk",
+          "fileName": "ZERO-v2.20.0-release.apk",
+          "fileSize": "91.6 MB",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.20.0/ZERO-v2.20.0-release.apk",
+          "sha256": "35b5b7e459c4d1caa61082a84e9ac8e9129348149392a0b93c9812913a91fe50"
         }
       ],
-      "sha256": "e1cb55d3f1c396f8fa45e4da443017069b4b5f7b2c6d476b13cc111ff54ff1e6",
+      "sha256": "35b5b7e459c4d1caa61082a84e9ac8e9129348149392a0b93c9812913a91fe50",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +52,16 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.20.0",
+          "date": "2026-11-29",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.20.0/ZERO-v2.20.0-release.apk",
+          "notes": [
+            "新增安全恢复预览、本机恢复点、循环锚点、改期提醒和专注重开恢复。",
+            "新增今天做、立即做、日历时间块、组合筛选、批量操作、本周回顾和离线收件箱分享。",
+            "ATLAS 提供今日行动与全部地点任务，30 秒整理支持更多文件夹和撤销放弃。可选 ARM64 精简包或通用包。"
+          ]
+        },
         {
           "version": "2.19.4",
           "date": "2026-11-29",

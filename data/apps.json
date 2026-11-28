@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.16.0",
+      "latestVersion": "2.16.1",
       "updatedAt": "2026-11-28",
       "fileSize": "3.1 MB",
-      "fileName": "ZERO-v2.16.0-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.16.0/ZERO-v2.16.0-release.apk",
+      "fileName": "ZERO-v2.16.1-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.16.1/ZERO-v2.16.1-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.16.0-release.apk",
+          "fileName": "ZERO-v2.16.1-release.apk",
           "fileSize": "3.1 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.16.0/ZERO-v2.16.0-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.16.1/ZERO-v2.16.1-release.apk"
         }
       ],
-      "sha256": "f75ce26492062647de69fe3b7615537f2e7a751871e24cc6b101dc389b5937b0",
+      "sha256": "71f0501b1efff51ad95c49e64eccb35cab4682b06eccb000c859319c9cf9cd1f",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,15 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.16.1",
+          "date": "2026-11-28",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.16.1/ZERO-v2.16.1-release.apk",
+          "notes": [
+            "修复备份恢复：本地 JSON 导入和 WebDAV 拉取会在写入前校验备份。缺少必要数据或格式错误时，保留本机数据并显示错误提示。继续兼容 v1–v4 备份。",
+            "修复 ATLAS 地点任务卡：按满 0.3 秒完成一次，提前松手、取消手势或切换任务时会清零进度。"
+          ]
+        },
         {
           "version": "2.16.0",
           "date": "2026-11-28",

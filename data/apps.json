@@ -18,22 +18,22 @@
       ],
       "arch": "Universal (arm64 / armv7)",
       "minOs": "Android 8.0+",
-      "latestVersion": "2.19.2",
+      "latestVersion": "2.19.3",
       "updatedAt": "2026-11-28",
       "fileSize": "91.5 MB",
-      "fileName": "ZERO-v2.19.2-release.apk",
-      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.2/ZERO-v2.19.2-release.apk",
+      "fileName": "ZERO-v2.19.3-release.apk",
+      "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.3/ZERO-v2.19.3-release.apk",
       "downloads": [
         {
           "platform": "Android",
           "label": "Android (.apk)",
           "matcher": ".apk",
-          "fileName": "ZERO-v2.19.2-release.apk",
+          "fileName": "ZERO-v2.19.3-release.apk",
           "fileSize": "91.5 MB",
-          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.2/ZERO-v2.19.2-release.apk"
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.3/ZERO-v2.19.3-release.apk"
         }
       ],
-      "sha256": "1c55ea3051730f1be67a369c79af18356d22fb2a63368599075db436be852210",
+      "sha256": "d9de677285ca850a39a36166fe0cc1cf9225de5676bbae057c37368bede68c01",
       "iconType": "zero",
       "highlights": [
         "可扩展「执行主题引擎」：MONOLITH（纯黑呼吸光晕 + 全手势起步）与 RUNWAY（tnum 时间尺 + 比例色块 + NOW 瞄准框）零状态丢失一键 Crossfade 切换",
@@ -42,6 +42,14 @@
         "多端强迫症级精密整理：600dp 执行页居中约束 + 直板/折叠屏双栏/平板三栏 VAULT 整理库 + 30 秒清仓 + WebDAV + 日中韩英 4 语言"
       ],
       "releases": [
+        {
+          "version": "2.19.3",
+          "date": "2026-11-28",
+          "downloadUrl": "https://github.com/shynw1983/zero/releases/download/v2.19.3/ZERO-v2.19.3-release.apk",
+          "notes": [
+            "ATLAS 的 Google 夜间地图改用哑光黑与中性灰。建筑、道路和水域用灰度区分，浅灰地名搭配焦橙任务光晕。"
+          ]
+        },
         {
           "version": "2.19.2",
           "date": "2026-11-28",
